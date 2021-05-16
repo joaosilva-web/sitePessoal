@@ -44,7 +44,7 @@ window.addEventListener('scroll', debounce(function() {
 
 
 /*====slider====*/
-let time = 5000,
+let time = 6000,
     currentImageIndex = 0,
     images = document.querySelectorAll("#slider span")
     max = images.length;

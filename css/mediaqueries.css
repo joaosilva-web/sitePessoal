@@ -64,10 +64,33 @@
     #slider span .center{
         min-width: 90vw;
     }
+
+    /*=====Fim do .hobby=====*/
+
+    [data-anime="left"] {
+        transform: translate3d(-10px, 0, 0);
+    } 
+    
+    [data-anime="right"] {
+        transform: translate3d( 10px, 0, 0);
+    } 
+    
+    [data-anime="top"] {
+        transform: translate3d( 0px, -10px, 0);
+    } 
+    
+    [data-anime="bottom"] {
+        transform: translate3d(0px, 10px, 0);
+    }
+    
+    [data-anime].animate {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
  }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (mxn-width: 768px) { 
+@media (max-width: 768px) { 
 
  }
 
@@ -77,6 +100,25 @@
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-
+@media (max-width: 1440px) { 
+    [data-anime="left"] {
+        transform: translate3d(-10px, 0, 0);
+    } 
+    
+    [data-anime="right"] {
+        transform: translate3d( 10px, 0, 0);
+    } 
+    
+    [data-anime="top"] {
+        transform: translate3d( 0px, -10px, 0);
+    } 
+    
+    [data-anime="bottom"] {
+        transform: translate3d(0px, 10px, 0);
+    }
+    
+    [data-anime].animate {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
  }
