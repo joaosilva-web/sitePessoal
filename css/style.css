@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body h1,h2,h3{
+    font-family: 'Rubik', sans-serif;
+    color: #24232c;
+}
+
+body p {
+    font-family: 'Nunito', sans-serif;
+    color: #24232c;
+}
+
+
+.center{
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 80vw;
+}
+
+.sobre p, .oquefaco p {
+    padding-top: 2px;
+}
+
+
+header{
+    margin-top: 20px;
+}
+
+header .center {
+    height: 5vh;
+    display: flex;
+    align-items: baseline;
+}
+header h2{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(39, 39, 39);
+}
+header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: rgb(168, 162, 162);
+}
+
+main .center{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre-mim {
+    max-width: 31vw;
+}
+
+.frase {
+    padding-bottom: 30px;
+}
+
+.sobre-mim h3,span{
+    display: inline;
+}
+.sobre-mim h3, .texto h3{
+    color: #5C164E;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.sobre-mim span, .texto span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.5rem;
+    font-weight: lighter;
+    color: rgb(168, 162, 162);
+}
+
+.sobre-mim .buttons{
+    margin-top: 60px;
+}
+
+.sobre-mim .buttons a:hover {
+    transform: translateY(-5px);
+}
+
+.sobre-mim button{
+    border: 0;
+    background-color: #5C164E;
+    padding: 0.8rem 2rem;
+    border-radius: 1.8rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: .5s ease;
+}
+
+
+.sobre-mim button:nth-child(2){
+    background-color: #ffffff;
+}
+
+.sobre-mim button:nth-child(2) a{
+    color: #5C164E;
+}
+
+.sobre-mim button:nth-child(2):hover{
+    background-color: #ffffff;
+}
+
+.sobre-mim button:nth-child(2) a:hover{
+    color: rgba(92, 22, 78, 0.795);
+}
+
+.sobre-mim button:hover {
+    transform: translateY(-5px);
+    background-color: #46103b;
+}
+
+.sobre-mim a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #5C164E;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    transition: 0.8s ease;
+}
+
+.sobre-mim a:hover {
+    color: #5c164ebe;
+}
+
+.sobre-mim button a {
+    color: white;
+    margin-left: 0;
+}
+
+.sobre-mim button a:hover {
+    
+    color: white;
+}
+
+.oquefaco {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    max-height: auto;
+    
+}
+
+
+.oquefaco .center {
+    display: flex;
+    max-width: 100vw;
+    height: 100vh;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+.oquefaco svg {
+    
+    width: 40vw;
+}
+
+.oquefaco .texto {
+    
+    max-width: 40vw;
+}
+
+.texto span {
+    display: inline;
+    color: #24232c;
+}
+
+.texto h3 {
+    display: inline;
+}
+
+.oquefaco h2{
+
+    display: block;
+    font-size: 2rem;
+    color: #24232c;
+}
+
+.oquefaco p {
+    display: block;
+    font-size: 1rem;
+    color: #24232c; 
+}
+
+
+/*====hobyy====*/
+.hobby h3,span{
+    display: inline;
+}
+
+.hobby h3 {
+    color: #5C164E;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.hobby {
+    min-height: 100vh;
+}
+
+.hobby .center {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobby .titulo {
+    display: inline;
+}
+
+.hobby .texto {
+    width: 40vw;
+}
+
+#slider {
+    width: 50vw;
+    height: 70vh;
+}
+
+#slider span{
+    opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: 50vw;
+    height: 70vh;
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    transition: opacity 800ms;
+}
+
+#slider .img1{
+    background-image: url(../images/familia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slider .img2{
+    background-image: url(../images/filme.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slider .img3{
+    background-image: url(../images/programmer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slider .img4{
+    background-image: url(../images/moon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slider .img5{
+    background-image: url(../images/games.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#slider span p {
+    align-self: center;
+    height: 20%;
+    width: 50%;
+    border-radius: 20px;
+    color: white;
+}
+
+#slider span .center {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #24232cb7;
+    transition: 1s ease;
+}
+
+
+#slider span.selected { 
+    opacity: 1;
+}
+
+
+footer {
+    width: 100%;
+    
+}
+
+footer  .center{
+ display: flex;
+ justify-content: center;
+
+}
+
+footer .redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+footer i{
+    font-size: 2.5rem;
+    color: #5C164E;
+    transition: .5s ease;
+    background-color: transparent;
+}
+
+footer a {
+    transition: 1s ease;
+    background-color: transparent;
+}
+
+footer i:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 4px #24232c;
+   
+}
+
+footer a:hover{
+    transform: rotate(5deg);
+
+}

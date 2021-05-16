@@ -1,0 +1,82 @@
+/* Small devices (landscape phones, 576px and up*/
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    body article {
+        margin-bottom: 100px;
+    }
+    main .center {
+        height: auto;
+        width: 100vw;
+        flex-direction: column-reverse;
+        align-items: baseline;
+        justify-content: center;
+    }
+    main .sobre-mim {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+    .center figure svg {
+        width: 90vw;
+    }
+
+    .sobre-mim .buttons {
+        display: flex;
+    }
+
+    .sobre-mim button{
+        width: 50vw;
+    }
+
+    /*=====Fim da section .sobre=====*/
+    .oquefaco .center {
+        height: auto;
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .oquefaco .texto {
+        min-width: 90vw;
+    }
+
+    /*=====Fim do article .oquefaco=====*/
+
+    .hobby .center {
+        height: auto;
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hobby .texto {
+        width: 90vw;
+    }
+
+    #slider {
+        width: 90vw;
+    }
+    #slider span {
+        width: 90vw;
+    }
+    #slider span .center{
+        min-width: 90vw;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (mxn-width: 768px) { 
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }
