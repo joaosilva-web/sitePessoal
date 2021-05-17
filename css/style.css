@@ -36,7 +36,7 @@ header .center {
     align-items: baseline;
 }
 
-header a {
+header .center a {
     display: flex;
     text-decoration: none;
     align-items: baseline;
