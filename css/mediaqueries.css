@@ -98,10 +98,30 @@
         opacity: 1;
         transform: translate3d(0px, 0px, 0px);
     }
- }
 
+    /*===formulario==*/
+    .corpo-fale-comigo header a:nth-child(1){
+        justify-content: center;
+        opacity: 1;
+    }
+    .corpo-fale-comigo header a:nth-child(1) h2{
+        font-size: .6rem;
+    }
+    .corpo-fale-comigo header a:nth-child(1) p{
+        font-size: .3rem;
+    }
 
-@media (max-width: 768px) { 
+    .corpo-fale-comigo header a:nth-child(2) h2{
+        font-size: .8rem;
+    }
+
+    .corpo-fale-comigo main .center {
+        flex-direction: column;
+    }
+
+    form {
+        width: 90%;
+    }
  }
 
 
@@ -118,6 +138,7 @@
 
 
 @media (max-width: 1440px) { 
+
     .sobre-mim .buttons {
         display: flex;
     }
