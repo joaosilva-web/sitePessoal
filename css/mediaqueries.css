@@ -1,4 +1,14 @@
-/* Small devices (landscape phones, 576px and up*/
+@media (max-width: 375px) {
+    header .center a h2{
+        width: auto;
+        font-size: .7rem;
+      }
+      header .center a p{
+        width: auto;
+        font-size: .6rem;
+      }
+}
+
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;

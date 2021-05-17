@@ -19,8 +19,8 @@
           display: flex;
           justify-content: center;
           align-items: baseline;
-
-      }
+          width: 100vw;
+        }
 
       figure{
           width: 100vw;
@@ -30,9 +30,21 @@
       }
 
       h2{
+        font-size: 2rem;
           text-align: center;
           color: #5C164E;
           text-transform: uppercase;
+      }
+
+      @media (max-width: 768px) { 
+        header .center a h2{
+          width: auto;
+          font-size: .7rem;
+        }
+        header .center a p{
+          width: auto;
+          font-size: .6rem;
+        }
       }
   </style>
   <body>

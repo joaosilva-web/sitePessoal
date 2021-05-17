@@ -35,6 +35,13 @@ header .center {
     display: flex;
     align-items: baseline;
 }
+
+header a {
+    display: flex;
+    text-decoration: none;
+    align-items: baseline;
+}
+
 header h2{
     font-family: 'Rubik', sans-serif;
     color: rgb(39, 39, 39);
