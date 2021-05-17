@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (max-width: 395px) {
     header .center a h2{
         width: auto;
         font-size: .7rem;
@@ -10,8 +10,19 @@
 }
 
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
+    header {
+        padding-bottom: 20px;
+    }
+
+    header .center {
+        flex-direction: column;
+    }
+
+    .frase {
+        margin-top: 15px;
+    }
+    .frase h3 {
+        font-size: 1.5rem;
     }
 
     body article {

@@ -21,6 +21,25 @@
         <!--Início do .center-->
         <a href="index.html"><h2>João Silva</h2>
           <p>WEB DESIGNER(EM FORMAÇÃO)</p></a>
+
+          <div class="redes-sociais" id="socialmidia">
+            <!--Início do .rede-sociais-->
+            <div class="tooltip">
+              <a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-gustavo-ribeiro-da-silva-aa95421a4/"><i class="fab fa-linkedin"></i></a>
+              <div class="tooltip-text">Linkedin</div>
+            </div>
+
+           <div class="tooltip">
+            <a target="_blank" href="https://www.instagram.com/joaogustavo.r.s"><i class="fab fa-instagram-square"></i></a>
+            <div class="tooltip-text">Instagram</div>
+           </div>
+
+           <div class="tooltip">
+            <a target="_blank" href="https://www.facebook.com/JoaoGustavoSilv4"><i class="fab fa-facebook-square"></i></i></a>
+            <div class="tooltip-text">Facebook</div>
+           </div>
+          </div>
+
       </div>
       <!--Fim do .center-->
     </header>
@@ -36,7 +55,7 @@
           <article class="sobre-mim" data-anime="left">
             <!--Início do  article .sobre-mim-->
               <div class="frase">
-                <h3>"A imaginação é mais importante que o conhecimento.</h3><span>Albert Einstein</span>
+                <h3>"A imaginação é mais importante que o conhecimento".</h3><span><a href="https://pt.wikipedia.org/wiki/Albert_Einstein" target="_blank">Albert Einstein</a></span>
               </div><!--Fim do .frase-->
               <div class="texto">
               <h2>Sobre mim</h2>
@@ -215,7 +234,7 @@ viewBox="0 0 4488 4488"
           </figure>
           <div class="texto" data-anime="right">
             <div class="frase">
-            <h3>“Escolha um trabalho que você ama e você nunca terá que trabalhar um dia sequer na vida.</h3><span>Confúcio</span>
+            <h3>“Escolha um trabalho que você ama e você nunca terá que trabalhar um dia sequer na vida".</h3><span><a href="https://pt.wikipedia.org/wiki/Conf%C3%BAcio" target="_blank">Confúcio</a></span>
           </div><!--Fim do .frase-->
           <h2>O que faço?</h2>
           <p>
@@ -272,7 +291,7 @@ viewBox="0 0 4488 4488"
 
             <div class="texto">
               <div class="frase">
-                <h3>"A arte do descanço é uma parte da arte de trabalhar</h3><span>Jhon Steinbeck</span>
+                <h3>"A arte do descanço é uma parte da arte de trabalhar".</h3><span><a href="https://pt.wikipedia.org/wiki/John_Steinbeck" target="_blank">John Steinbeck</a></span>
               </div>
               <div class="titulo">
               <h2>Possuo algum hobby?</h2>
@@ -324,20 +343,43 @@ viewBox="0 0 4488 4488"
         <!--Início do footer-->
         <div class="center">
           <!--Início do .center-->
-          <div class="redes-sociais" id="socialmidia">
-            <!--Início do .rede-sociais-->
-            <a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-gustavo-ribeiro-da-silva-aa95421a4/"><i class="fab fa-linkedin"></i></a>
-
-            <a target="_blank" href="https://www.instagram.com/joaogustavo.r.s"><i class="fab fa-instagram-square"></i></a>
-
-            <a target="_blank" href="https://www.facebook.com/JoaoGustavoSilv4"><i class="fab fa-facebook-square"></i></i></a>
-          </div>
-          <!--Fim do .rede-sociais-->
+          <div class="copyright" id="contentFooter">
+            <h2>João Silva</h2><i class="far fa-copyright"></i><p>Todos os deireito reservados</p>
         </div>
         <!--Fim do .center-->
       </footer>
       <!--Fim do footer-->
       <script src="JS/javaScript.js"></script>
+      <script>
+        /*====slider====*/
+        let time = 6000,
+            currentImageIndex = 0,
+            images = document.querySelectorAll("#slider span")
+            max = images.length;
+
+        function nextImage() {
+
+            images[currentImageIndex]
+                .classList.remove("selected")
+
+            currentImageIndex++
+
+            if(currentImageIndex >= max)
+                currentImageIndex = 0
+
+            images[currentImageIndex]
+                .classList.add("selected")
+        }
+
+        function start() {
+            setInterval(() => {
+                // troca de image
+                nextImage()
+            }, time)
+        }
+
+        window.addEventListener("load", start)
+      </script>
       
   </body>
 </html>
