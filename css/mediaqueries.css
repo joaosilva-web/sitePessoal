@@ -95,7 +95,7 @@
  }
 
 /* Large devices (desktops, 992px and up)*/
-@media (max-width: 1044px) { 
+@media (max-width: 1024px) { 
     .sobre-mim .buttons {
         display: flex;
     }
