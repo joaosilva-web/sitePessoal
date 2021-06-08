@@ -17,19 +17,19 @@
 }
 
 #cabeça{
-    animation: cabeça 8s ease-in  infinite;
+    animation: cabeça 8s ease-in-out  infinite;
     transform-origin: bottom;
     transform-box: fill-box;
 }
 
 #sombrancelha{
-    animation: sombrancelha-esquerda 7s ease-in  infinite;
+    animation: sombrancelha-esquerda 7s ease-in-out  infinite;
     transform-origin: center;
     transform-box: fill-box;
 }
 
 #sombrancelha_0{
-    animation: sombrancelha-direita 7s ease-in  infinite;
+    animation: sombrancelha-direita 7s ease-in-out  infinite;
     transform-origin: center;
     transform-box: fill-box;
 }
