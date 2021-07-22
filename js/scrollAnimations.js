@@ -1,4 +1,21 @@
-/*====scrolling animations====*/
+var lastScrollTop = 0;
+
+navbar = document.getElementById("header");
+
+window.addEventListener("scroll", function(){
+    var scrollTop = window.pageYOffset || this.document.documentElement.scrollTop;
+    if(scrollTop > lastScrollTop) {
+        navbar.style.top="-100px";
+    } else {
+        navbar.style.top="0";
+        navbar.classList.add("filter");
+    }
+    lastScrollTop = scrollTop;
+    navbar.classList.rremove("filter");
+});
+
+/*scrolling animations */
+
 const debounce = function(func, wait, immediate) {
     let timeout;
     return function(...args) {
@@ -19,7 +36,7 @@ const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
 function animeScroll(){
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 5);
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
     target.forEach(function(element) {
         if((windowTop) > element.offsetTop) {
             element.classList.add(animationClass);
