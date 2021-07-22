@@ -1,0 +1,43 @@
+.footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5.875rem;
+}
+
+.footer .texto h2, .footer .texto p, .footer h3{
+    text-align: center;
+    font-family: var(--montserrat);
+    font-weight: 300;
+}
+
+.footer .texto h2 {
+    font-size: 3.00rem;
+}
+
+.footer .texto p {
+    font-size: 1.13rem;
+    margin-top: 1.25rem;
+    width: 46.00rem;
+}
+
+.footer h3 {
+    font-size: 1.50rem;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 2.50rem 0;
+    width: 14.50rem;
+}
+
+.footer ul li a {
+    color: var(--black);
+}
+
+.footer i {
+    font-size: 2rem;
+}
