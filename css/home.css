@@ -62,7 +62,14 @@
 }
 
 .toAbout {
+    align-self: flex-end;
     display: flex;
     justify-content: center;
+
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    
+    margin-bottom: -10px;
     width: 100vw;
 }
