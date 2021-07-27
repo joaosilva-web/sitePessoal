@@ -1,21 +1,4 @@
-var lastScrollTop = 0;
-
-navbar = document.getElementById("header");
-
-window.addEventListener("scroll", function(){
-    var scrollTop = window.pageYOffset || this.document.documentElement.scrollTop;
-    if(scrollTop > lastScrollTop) {
-        navbar.style.top="-100px";
-    } else {
-        navbar.style.top="0";
-        navbar.classList.add("filter");
-    }
-    lastScrollTop = scrollTop;
-    navbar.classList.rremove("filter");
-});
-
-/*scrolling animations */
-
+/*====scrolling animations====*/
 const debounce = function(func, wait, immediate) {
     let timeout;
     return function(...args) {
